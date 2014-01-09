@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    android:orientation="vertical" >
+
+    <!-- Name Label -->
+
+     <TextView
+        android:id="@+id/title2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title2"
+        android:textStyle="bold" />
+    
+     <TextView
+        android:id="@+id/title4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/temp2"
+        android:textStyle="bold" />
+
+   
+    <TextView
+        android:id="@+id/temp4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title4"
+        android:textStyle="bold" />
+    
+     <TextView
+        android:id="@+id/title6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/temp4"
+        android:textStyle="bold" />
+     
+      <TextView
+        android:id="@+id/temp6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title6"
+        android:textStyle="bold" />
+
+</RelativeLayout>
