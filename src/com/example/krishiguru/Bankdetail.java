@@ -38,7 +38,7 @@ public class Bankdetail  extends Activity {
 		String res;
 		try {
 			
-			response = CustomHttpClient.executeHttpPost("http://203.199.146.117/getnewbank.php", postParameters);
+			response = CustomHttpClient.executeHttpPost("http://server-ip/getnewbank.php", postParameters);
 			res=response.toString();
 			res = res.trim();
             JSONObject obj=(JSONObject) new JSONTokener(res).nextValue();

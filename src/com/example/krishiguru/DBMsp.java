@@ -46,7 +46,7 @@ public class DBMsp extends Activity {
     			String res;
             	
             	try {
-            		response = CustomHttpClient.executeHttpPost("http://203.199.146.117/getmsp.php", postParameters);
+            		response = CustomHttpClient.executeHttpPost("http://server-ip/getmsp.php", postParameters);
 						
 		            	    res=response.toString();
 		            	    res = res.trim();

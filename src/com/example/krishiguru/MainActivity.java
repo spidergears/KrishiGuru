@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 	public void openJansabha(View v)
 	 {
 		startActivity(new Intent(Intent.ACTION_VIEW, 
-				Uri.parse("http://203.199.146.117/KisaanJanSabha/")));	
+				Uri.parse("http://server-ip/KisaanJanSabha/")));	
 	 }
 	public void openUtility(View v)
 	 {

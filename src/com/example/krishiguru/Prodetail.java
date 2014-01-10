@@ -35,7 +35,7 @@ public class Prodetail  extends Activity {
 		String res;
 		try {
 			
-			response = CustomHttpClient.executeHttpPost("http://203.199.146.117/getnewrecpro.php", postParameters);
+			response = CustomHttpClient.executeHttpPost("http://server-ip/getnewrecpro.php", postParameters);
 			res=response.toString();
            res = res.trim();
            JSONObject obj=(JSONObject) new JSONTokener(res).nextValue();

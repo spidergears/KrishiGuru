@@ -39,7 +39,7 @@ public class DBRetailCity extends ListActivity {
 	   		postParameters.add(new BasicNameValuePair("City", vari));
 	   		
 		try {
-    		response = CustomHttpClient.executeHttpPost("http://203.199.146.117/getretailname.php", postParameters);
+    		response = CustomHttpClient.executeHttpPost("http://server-ip/getretailname.php", postParameters);
 		    response=response.toString();
             response = response.trim();
             	    JSONArray obj=(JSONArray) new JSONTokener(response).nextValue();

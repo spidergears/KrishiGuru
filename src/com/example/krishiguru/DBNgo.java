@@ -32,7 +32,7 @@ public class DBNgo extends ListActivity {
 		ArrayList<HashMap<String, String>> NgoList = new ArrayList<HashMap<String, String>>();
 		String response = null;
 		try {
-    		response= CustomHttpClient.executeHttpGet("http://203.199.146.117/getngoname.php");	
+    		response= CustomHttpClient.executeHttpGet("http://server-ip/getngoname.php");	
             response=response.toString();
             response = response.trim();
             	    JSONArray obj=(JSONArray) new JSONTokener(response).nextValue();

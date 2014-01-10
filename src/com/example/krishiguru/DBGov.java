@@ -32,7 +32,7 @@ public class DBGov extends ListActivity {
 		ArrayList<HashMap<String, String>> GovList = new ArrayList<HashMap<String, String>>();
 		String response = null;
 		try {
-    		response= CustomHttpClient.executeHttpGet("http://203.199.146.117/getgovpolicyname.php");	
+    		response= CustomHttpClient.executeHttpGet("http://server-ip/getgovpolicyname.php");	
             response=response.toString();
             response = response.trim();
             	    JSONArray obj=(JSONArray) new JSONTokener(response).nextValue();

@@ -29,7 +29,7 @@ public class DBBank extends ListActivity {
 		ArrayList<HashMap<String, String>> BankList = new ArrayList<HashMap<String, String>>();
 		String response = null;
 		try {
-    		response= CustomHttpClient.executeHttpGet("http://203.199.146.117/getbankname.php");	
+    		response= CustomHttpClient.executeHttpGet("http://server-ip/getbankname.php");	
             response=response.toString();
             response = response.trim();
             	    JSONArray obj=(JSONArray) new JSONTokener(response).nextValue();

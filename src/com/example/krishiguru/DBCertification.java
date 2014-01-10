@@ -36,7 +36,7 @@ public class DBCertification extends ListActivity {
 		ArrayList<HashMap<String, String>> CertList = new ArrayList<HashMap<String, String>>();
 		String response = null;
 		try {
-    		response= CustomHttpClient.executeHttpGet("http://203.199.146.117/getcertname.php");	
+    		response= CustomHttpClient.executeHttpGet("http://server-ip/getcertname.php");	
             response=response.toString();
             response = response.trim();
             	    JSONArray obj=(JSONArray) new JSONTokener(response).nextValue();

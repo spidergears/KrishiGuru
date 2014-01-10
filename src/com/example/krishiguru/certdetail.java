@@ -36,7 +36,7 @@ public class certdetail  extends Activity {
 		String res;
 		try {
 			
-			response = CustomHttpClient.executeHttpPost("http://203.199.146.117/getnewcert.php", postParameters);
+			response = CustomHttpClient.executeHttpPost("http://server-ip/getnewcert.php", postParameters);
 			res=response.toString();
            res = res.trim();
            JSONObject obj=(JSONObject) new JSONTokener(res).nextValue();

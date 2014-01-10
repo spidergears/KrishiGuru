@@ -34,7 +34,7 @@ public class Govdetail  extends Activity {
 		String res;
 		try {
 			
-			response = CustomHttpClient.executeHttpPost("http://203.199.146.117/getnewgovpol.php", postParameters);
+			response = CustomHttpClient.executeHttpPost("http://server-ip/getnewgovpol.php", postParameters);
 			res=response.toString();
            res = res.trim();
            JSONObject obj=(JSONObject) new JSONTokener(res).nextValue();

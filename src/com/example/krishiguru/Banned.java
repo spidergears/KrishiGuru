@@ -30,7 +30,7 @@ public class Banned extends ListActivity {
 		String response = null;
     	
     	try {
-    				response= CustomHttpClient.executeHttpGet("http://203.199.146.117/getbanpesti.php");	
+    				response= CustomHttpClient.executeHttpGet("http://server-ip/getbanpesti.php");	
             	    response=response.toString();
             	    response = response.trim();
             	    JSONArray obj=(JSONArray) new JSONTokener(response).nextValue();
